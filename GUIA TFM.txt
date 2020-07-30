@@ -1,0 +1,46 @@
+introduccion
+luego ecmascript
+luego typescript
+angularjs
+angular 
+arquitectura angular, menciona que es arquitectura debasada en COMPONENTESy porque anglar lo es
+principio aquitectura componentes
+componentnes asociados a plantillas
+PLANTILLAS ES HTML CON DIRECTIVAS QUE SE RENDERIZA ANTES DE VISUALIZACION
+plantillas ignoran scripts
+SERVICIOS, DECORADORES ... DECIR QUE TODO SON CLASES CON DECORADORES QUE DEFINEN METADATOS
+HABLA DE INYECCION DE DEPEDENCIAS 
+MODULOS NGMODULE HABLA DE MODULO PRINCIPAL NECESARIO
+CATEGORIAS MODULOS INVESTIGA
+data binding
+interpolaciones expresiones
+PIPES
+COMUNICACION MEDIANTE EVENTOS... EVENT BINDING 
+VARIABLES DE REFERENCIAS #  CUANDO SE HACE NECESARIO PONER EJEMPLO HISTORICO QUE SE UTILIZ LIBRERIA NO NPM
+EXPLICA NPM
+COMUNICACION ENTRE COMPONENTES INPUT OUTPUT
+LAZYLOAD A LA MISMA ALQTURA QUE ARQCUITECTURA
+CICLO DE VIDA COMPONENTES
+DIRECTIVAS, ESTRUCTURALES, PERSONALIZADAS EJEMPLOS DE AMBOS DE ASEGURADORAS
+OBSERVABLES
+
+
+
+
+BIBLIOGRAFIA
+
+
+
+
+
+
+https://es.wikipedia.org/wiki/ECMAScript
+
+
+https://www.w3schools.com/js/js_es6.asp
+https://openwebinars.net/blog/que-es-ecmascript/
+https://lemoncode.net/lemoncode-blog/2017/9/5/introduccion-programacion-funcional-javascript
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
+http://diegoboscan.com/decoradores-en-typescript/
+https://github.com/Microsoft/TypeScript/blob/730f18955dc17068be33691f0fb0e0285ebbf9f5/doc/spec.md#1
