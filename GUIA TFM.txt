@@ -44,3 +44,5 @@ https://lemoncode.net/lemoncode-blog/2017/9/5/introduccion-programacion-funciona
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
 http://diegoboscan.com/decoradores-en-typescript/
 https://github.com/Microsoft/TypeScript/blob/730f18955dc17068be33691f0fb0e0285ebbf9f5/doc/spec.md#1
+https://angular.io/
+https://geeks.ms/jkpelaez/2009/04/18/arquitectura-basada-en-componentes/
