@@ -1,0 +1,60 @@
+
+<h3>Listado que se actualiza con Angular</h3>
+<div class="row" *ngIf="listadoObjetos">
+    <div class="col-md-12">
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Valor</th>
+                        <th scope="col">Label</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let objeto of listadoObjetos">
+                        <td>{{objeto.value}}</td>
+                        <td>{{objeto.label}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <button type="button" class="btn btn-danger" (click)="eliminaUltimoValor()"><i class="fa fa-times"></i> Elimina ultimo valor</button>
+</div>
+<br><br>
+<h3>Listado que se actualiza con Jquery</h3>
+<div class="row">
+    <div class="col-md-12">
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Valor</th>
+                        <th scope="col">Label</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="tr_jquery_1">
+                        <td>1</td>
+                        <td>Typescript</td>
+                    </tr>
+                    <tr id="tr_jquery_2">
+                        <td>2</td>
+                        <td>HTML</td>
+                    </tr>
+                    <tr id="tr_jquery_3">
+                        <td>3</td>
+                        <td>CSS</td>
+                    </tr>
+                    <tr id="tr_jquery_4">
+                        <td>4</td>
+                        <td>Bootstrap</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <button type="button" class="btn btn-danger" onclick="$('#tr_jquery_4').remove();$(this).remove()"><i class="fa fa-times"></i> Elimina valor Bootstrap</button>
+</div>
