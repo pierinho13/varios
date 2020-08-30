@@ -1,3 +1,4 @@
+import { ComponenteService } from './../componente.service';
 import { Component, OnInit } from '@angular/core';
 import { $ } from 'protractor';
 
@@ -9,40 +10,21 @@ import { $ } from 'protractor';
 export class ListadoComparacionComponent implements OnInit {
 
 
-    listadoObjetos: Array<any> = [
-        
-        {
-            "value" : "1",
-            "label" : "Angular"
-        },
-        {
-            "value" : "2",
-            "label" : "Jquery"
-        },
-        {
-            "value" : "3",
-            "label" : "Node"
-        },
-        {
-            "value" : "4",
-            "label" : "NPM",
-        },
-        {
-            "value" : "5",
-            "label" : "Ecmascript2015"
-        }
-
-        ];
+    listadoObjetos: Array<any> = [];
 
 
-    constructor() { }
+    constructor(private componenteService:ComponenteService) { }
 
-    ngOnInit() { }
+    ngOnInit() {
+
+        this.listadoObjetos =  this.componenteService.obtieneVariableListadoObjetos();
+
+     }
 
 
     eliminaUltimoValor() {
         //hacemos proceso en back end
-        this.listadoObjetos.splice(-1,1);
+        this.componenteService.eliminaUltimoValor();
     }
 
 }

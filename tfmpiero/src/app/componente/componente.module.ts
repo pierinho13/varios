@@ -1,3 +1,4 @@
+import { ComponenteService } from './componente.service';
 import { componenteRouting } from './componente-routing.module';
 import { NgModule } from '@angular/core';
 import { ComponenteComponent } from './componente.component';
@@ -9,6 +10,6 @@ import { ListadoComparacionComponent } from './listado-comparacion/listado-compa
     imports: [componenteRouting, ModuloCompartidoModule],
     exports: [],
     declarations: [ComponenteComponent, ListadoComparacionComponent],
-    providers: [],
+    providers: [ComponenteService],
 })
 export class ComponenteModule { }
