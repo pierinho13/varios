@@ -4,7 +4,6 @@ import { Component, OnInit } from '@angular/core';
     selector: 'app-componente',
     templateUrl: 'componente.component.html'
 })
-
 export class ComponenteComponent implements OnInit {
    
    

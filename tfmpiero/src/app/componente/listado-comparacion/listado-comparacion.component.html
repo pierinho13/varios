@@ -20,7 +20,7 @@
         </div>
     </div>
 
-    <button type="button" class="btn btn-danger" (click)="eliminaUltimoValor()"><i class="fa fa-times"></i> Elimina ultimo valor</button>
+    <button *ngIf="listadoObjetos.length > 0" type="button" class="btn btn-danger" (click)="eliminaUltimoValor()"><i class="fa fa-times"></i> Elimina ultimo valor</button>
 </div>
 <br><br>
 <h3>Listado que se actualiza con Jquery</h3>
