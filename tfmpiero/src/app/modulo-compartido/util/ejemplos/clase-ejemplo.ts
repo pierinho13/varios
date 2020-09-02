@@ -19,9 +19,17 @@ class Documento {
         const inmodificable = 2;
         let modificable = 2;
 
-        inmodificable = inmodificable + 2;
-
         modificable = modificable + 2;
+
+        inmodificable = inmodificable + 2;
+    }
+
+    ejemploOperadores() {
+
+        const array = [10,5,20,3,4,5];
+
+        let arraySoloPares = array.filter(n=> n % 2 == 0);
+
     }
   }
 
