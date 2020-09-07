@@ -8,6 +8,7 @@ const routes: Routes = [
     { path : 'componente', loadChildren: './componente/componente.module#ComponenteModule' },
     { path : 'directiva', loadChildren: './directiva/directiva.module#DirectivaModule' },
     { path : 'observable', loadChildren: './observable/observable.module#ObservableModule' },
+    { path : 'singleton', loadChildren: './singleton/singleton.module#SingletonModule' },
     { path: '**', pathMatch:'full', redirectTo: '/' }
 ];
 

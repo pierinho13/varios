@@ -1,3 +1,4 @@
+import { TransmisorService } from './../core/transmisor/transmisor.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,8 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class IntroduccionComponent implements OnInit {
     
     private atributoPrivado;
+    mostrarContenidoOculto : boolean = false;
 
-    constructor() { }
+    constructor(private transmisorService: TransmisorService) { }
 
     ngOnInit() {
 
@@ -20,6 +22,8 @@ export class IntroduccionComponent implements OnInit {
         numeros.push(2);
         numeros.push(3);
         // numeros.push("3");
+
+        this.mostrarContenidoOculto = this.transmisorService.obtieneMostrarContenidoOculto();
 
      }
 }

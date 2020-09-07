@@ -3,6 +3,8 @@ import { Optional, SkipSelf, Injectable } from '@angular/core';
 @Injectable()
 export class TransmisorService {
    
+    mostrarContenidoOculto: boolean = false;
+    
     constructor(@Optional() @SkipSelf() parentService: TransmisorService ) {
 
         if( parentService ){
@@ -12,4 +14,14 @@ export class TransmisorService {
         }
     }
     
+
+    obtieneMostrarContenidoOculto() {
+        return this.mostrarContenidoOculto;
+    }
+
+    cambiarMostrarContenidoOculto() {
+        this.mostrarContenidoOculto = !this.mostrarContenidoOculto;
+
+        return this.mostrarContenidoOculto;
+    }
 }

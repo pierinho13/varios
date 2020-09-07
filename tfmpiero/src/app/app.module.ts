@@ -13,9 +13,10 @@ import { CoreModule } from './core/core.module';
   ],
   imports: [
     BrowserModule,
-    appRouting
+    appRouting,
+    CoreModule
   ],
-  providers: [CoreModule],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
