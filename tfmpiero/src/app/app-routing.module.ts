@@ -7,6 +7,7 @@ const routes: Routes = [
     { path : 'ecmascript', loadChildren: './ecmascript/ecmascript.module#EcmascriptModule' },
     { path : 'componente', loadChildren: './componente/componente.module#ComponenteModule' },
     { path : 'directiva', loadChildren: './directiva/directiva.module#DirectivaModule' },
+    { path : 'observable', loadChildren: './observable/observable.module#ObservableModule' },
     { path: '**', pathMatch:'full', redirectTo: '/' }
 ];
 

@@ -1,0 +1,19 @@
+<div class="content">
+
+        <div class="row">
+    
+            <div class="card">
+                <div class="card-body">
+                <p class="card-text">
+
+                        <button (click)="obtieneResultadoFuncionAsincronaSimulada()" type="button" class="btn btn-success"><i class="fa fa-arrow-left" aria-hidden="true"></i> <span class="indentado">Cargar resultado mediante observable</span></button>
+                </p>
+
+                <div *ngIf="mostrarCargando" class="spinner-border" role="status">
+                        <span class="sr-only">Cargando...</span>
+                </div>
+                <p *ngIf="respuestaObservable">{{respuestaObservable}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
