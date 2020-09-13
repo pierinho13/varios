@@ -1,9 +1,15 @@
 import { Optional, SkipSelf, Injectable } from '@angular/core';
+import { BehaviorSubject, Observable } from 'rxjs';
 
 @Injectable()
 export class TransmisorService {
    
     mostrarContenidoOculto: boolean = false;
+
+
+    private datosBehaviurSubjectSource : BehaviorSubject<any> = new BehaviorSubject<any>("A partir de aquí se van a cargar los distintos componentes:");
+
+    datosBehaviurSubject$ : Observable<any> = this.datosBehaviurSubjectSource.asObservable();
     
     constructor(@Optional() @SkipSelf() parentService: TransmisorService ) {
 
@@ -23,5 +29,9 @@ export class TransmisorService {
         this.mostrarContenidoOculto = !this.mostrarContenidoOculto;
 
         return this.mostrarContenidoOculto;
+    }
+
+    emitirNuevoDatoBehaviurSubject(valorEmitir: string) {
+        this.datosBehaviurSubjectSource.next( valorEmitir );
     }
 }

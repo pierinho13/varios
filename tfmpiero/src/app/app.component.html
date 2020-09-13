@@ -13,10 +13,11 @@
           <li class="breadcrumb-item"><a routerLink="/directiva">Directiva</a></li>
           <li class="breadcrumb-item"><a routerLink="/observable">Observable</a></li>
           <li class="breadcrumb-item"><a routerLink="/singleton">Singleton</a></li>
+          <li class="breadcrumb-item"><a routerLink="/behaviur-subject">Behaviur Subject</a></li>
           <!-- aria-current="page" -->
         </ol>
       </nav>
-      <h6>A partir de aquí se van a cargar los distintos componentes: </h6>
+      <h6 *ngIf="textoBehaviurSubject">{{textoBehaviurSubject}} </h6>
       <div class="clearfix"></div>
       <br>
       <hr/>
