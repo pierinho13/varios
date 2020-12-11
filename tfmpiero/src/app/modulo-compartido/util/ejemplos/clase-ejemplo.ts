@@ -21,7 +21,7 @@ class Documento {
 
         modificable = modificable + 2;
 
-        inmodificable = inmodificable + 2;
+        // inmodificable = inmodificable + 2;
     }
 
     ejemploOperadores() {

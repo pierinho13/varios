@@ -1,0 +1,20 @@
+<div class="content">
+
+        <div class="row">
+    
+            <div class="card">
+                <div class="card-body">
+                <h5 class="card-title">Singleton</h5>
+                <p class="card-text">Este componente tiene inyectado a TransmisorService, el cual es un Singleton</p>
+                <p>Cambiando el valor de la variable mostrar en el servicio TransmisorService se mostrará u ocultará en todos los componentes que lo tengan inyectado</p>
+                </div>
+            </div>
+
+            <button (click)="cambiarValorMostrar()" type="button" class="btn btn-warning">
+                <i class="fa fa-arrow-left" aria-hidden="true"></i> 
+                <span *ngIf="mostrar==false" class="indentado">Mostrar valor oculto en todos los componentes</span>
+                <span *ngIf="mostrar==true" class="indentado">Ocultar valor oculto en todos los componentes</span>
+            </button>
+    
+        </div>
+    </div>

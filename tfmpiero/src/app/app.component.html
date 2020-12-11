@@ -1,16 +1,26 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Bienvenido al TFM!
-  </h1>
-</div>
+<nav class="navbar navbar-dark bg-dark">
+  <p routerLink="/" style="color: white">Trabajo de Fin de Máster - Alumno Piero Rospigliosi Beltrán</p>
+</nav>
 <br><br>
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <h2>A partir de aqui se van a cargar los distintos componentes: </h2>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a routerLink="/introduccion">Introducción</a></li>
+          <li class="breadcrumb-item"><a routerLink="/componente">Componente</a></li>
+          <li class="breadcrumb-item"><a routerLink="/ecmascript">ECMAScript</a></li>
+          <li class="breadcrumb-item"><a routerLink="/directiva">Directiva</a></li>
+          <li class="breadcrumb-item"><a routerLink="/observable">Observable</a></li>
+          <li class="breadcrumb-item"><a routerLink="/singleton">Singleton</a></li>
+          <li class="breadcrumb-item"><a routerLink="/behaviur-subject">Behaviur Subject</a></li>
+          <!-- aria-current="page" -->
+        </ol>
+      </nav>
+      <h6 *ngIf="textoBehaviurSubject">{{textoBehaviurSubject}} </h6>
       <div class="clearfix"></div>
-      <br><br><br>
+      <br>
+      <hr/>
       <router-outlet></router-outlet>
     </div>
   </div>
